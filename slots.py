@@ -1,7 +1,5 @@
 
-def slots_to_list(input_data):
-    # Map of categories to labels
-    category_to_label = {
+category_to_label = {
         'Accessibility, Location & Transportation': 'ALT',
         'Activity Level': 'AL',
         'Atmosphere, Decor & Comfort': 'ADC',
@@ -21,6 +19,9 @@ def slots_to_list(input_data):
         'Uniqueness': 'UNI',
         'General Sentiment': 'GS',
     }
+
+def slots_to_list(input_data):
+    # Map of categories to labels
 
     label_to_category = {v: k for k, v in category_to_label.items()}
 
